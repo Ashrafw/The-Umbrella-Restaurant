@@ -1,0 +1,151 @@
+.welcome {
+  background-color: $background-light;
+  color: $dark-color;
+  font-family: $font-title;
+
+  padding: 60px 0;
+  text-align: center;
+
+  .welcome-container {
+    width: 85%;
+    margin: auto;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+  }
+
+  a {
+    color: #25383c;
+    font-family: 'Montserrat', sans-serif;
+  }
+  h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 4rem;
+    padding: 2px 0;
+  }
+  h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    padding: 0px 0 4px 0;
+  }
+
+  .welcome-row {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-gap: 30px;
+
+    grid-template-areas: 'wel1 wel2 wel3';
+    // height: 500px;
+
+    // .welcome-item{
+
+    // }
+    .wel-item-1 {
+      background-image: url(../images/about/abt1.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      max-height: 480px;
+      grid-area: wel1;
+    }
+    .wel-item-2 {
+      grid-area: wel2;
+    }
+    .wel-item-3 {
+      background-image: url(../images/about/abt2.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      max-height: 480px;
+      grid-area: wel3;
+    }
+  }
+
+  @media (max-width: 1104px) {
+    p {
+      font-size: 0.8rem;
+    }
+    h2 {
+      font-size: 2.8rem;
+      padding: 4px 0 2px;
+    }
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 0.8rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      padding: 4px 0 2px;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
+    .hide-content {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    p {
+      font-size: 0.8rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      padding: 4px 0 2px;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
+    .hide-content {
+      display: none;
+    }
+
+    .welcome-row {
+      text-align: center;
+      padding: 20px 0;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+
+      grid-template-areas:
+        'wel2 wel2'
+        'wel1 wel3';
+    }
+
+    .wel-item-3 .wel-item-1 {
+      max-height: 100px;
+    }
+  }
+}
+
+// font-family: 'Cinzel', serif;
+// font-family: 'Dancing Script', cursive;
+// font-family: 'Montaga', serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Tangerine', cursive;
+
+// @media (min-width: 769px) {
+//   .row-grid {
+//     grid-template-columns: 1fr 2fr 1fr;
+//     grid-template-areas:
+//       'gic1  gic2  gic3'
+//       'gic4  gic5  gic6'
+//       'gic7  gic8  gic9';
+//   }
+// }
+
+// ipad

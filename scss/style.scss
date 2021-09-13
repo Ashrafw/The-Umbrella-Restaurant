@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Montaga&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap');
+
+$font-title: 'Montaga', serif;
+$font-content: 'Montaga', serif;
+
+// font-family: 'Cinzel', serif;
+// font-family: 'Dancing Script', cursive;
+// font-family: 'Montaga', serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Tangerine', cursive;
+
+$background-light: #fffcf0;
+$background-dark: #25383c;
+
+$light-color: white;
+$cream-color: blanchedalmond;
+$dark-color: #25383c;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+p {
+  font-family: $font-content;
+  font-size: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-title;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+p {
+  font-size: 0.9rem;
+}
+
+@import 'landing';
+@import 'welcome';
+@import 'footer';
+@import 'chefs';
+@import 'follow';
+@import 'rsvp';
+@import 'menu';
+@import 'findus';
+@import 'animation';

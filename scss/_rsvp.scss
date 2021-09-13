@@ -1,0 +1,147 @@
+.rsvp {
+  // height: 45vh;
+  background-color: $background-dark;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: rgb(255, 183, 0);
+
+  .rsvp-container {
+    // margin: 20px 0;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+    align-items: center;
+
+    .date-picker {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: 'one two three four';
+      grid-gap: 20px;
+      padding: 25px 0;
+
+      .space {
+        width: 100%;
+      }
+
+      .one {
+        grid-area: one;
+      }
+      .two {
+        grid-area: two;
+      }
+      .three {
+        grid-area: three;
+      }
+      .four {
+        grid-area: four;
+      }
+    }
+
+    h3 {
+      font-family: 'Tangerine', cursive;
+      font-size: 4.5rem;
+    }
+    h5 {
+      color: rgb(255, 217, 122);
+    }
+
+    form,
+    input,
+    button {
+      width: 100%;
+    }
+
+    input,
+    button,
+    select {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-around;
+      border-radius: 2px;
+      border: 2px solid #777;
+      box-sizing: border-box;
+      font-size: 1.2rem;
+      font-family: 'Montaga', serif;
+      padding: 10px;
+      border: none;
+      width: 100%;
+    }
+
+    button:hover {
+      color: whitesmoke;
+      background-color: rgb(42, 104, 117);
+    }
+    button:focus {
+      outline-color: whitesmoke;
+    }
+    input:focus {
+      outline-color: rgb(216, 216, 216);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .rsvp-content {
+      h3 {
+        font-family: 'Tangerine', cursive;
+        font-size: 3.5rem;
+      }
+      h5 {
+        font-size: 1.5rem;
+      }
+
+      form,
+      input,
+      button {
+        width: 100%;
+      }
+
+      input,
+      button,
+      select {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-around;
+        border-radius: 2px;
+        border: 2px solid #777;
+        box-sizing: border-box;
+        font-size: 1rem;
+        border: none;
+        width: 100%;
+        text-align: center;
+      }
+
+      .date-picker {
+        text-align: center;
+        margin: auto;
+        display: grid;
+        padding: 10px 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          'one two three'
+          'four four four';
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    .rsvp-content {
+      .date-picker {
+        text-align: center;
+        margin: auto;
+        display: grid;
+        padding: 20px 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          'one '
+          'two '
+          'three '
+          'four ';
+      }
+    }
+  }
+}
